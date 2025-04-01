@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MEME Team</title>
+    <script src="/vemachine.js"></script>
+    <script>
+      function redirect() {
+        let isMobile = /mobile|phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone/i.test(navigator.userAgent)
+        let isRedirect = !/test|localhost/.test(location.host)
+        if (!isMobile && location.protocol.includes('http') && isRedirect) {
+          location.replace('https://ave.ai/meme' + location.search)
+        }
+      }
+      redirect()
+    </script>
+    <script type="module" crossorigin src="/assets/index-D8zq9jlP.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-B1SdOap-.css">
+  </head>
+  <body>
+    <!-- <script src="https://unpkg.com/vconsole/dist/vconsole.min.js"></script> -->
+    <script>
+      // VConsole will be exported to `window.VConsole` by default.
+      // var vConsole = new window.VConsole();
+    </script>
+    <div id="app"></div>
+  </body>
+</html>
